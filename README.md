@@ -21,6 +21,7 @@ js代码：
 要研究的属性：
 
 ###　animation
+
 > animation属性是一个简写属性，用于设置六个动画属性：
 > animation-name 规定需要绑定到选择器的keyframe名称
 > animation-timing-function 规定完成动画所花费的时间，以秒或者毫秒计
@@ -171,3 +172,35 @@ css角度单位：`deg`,`grad`,`rad`,`turn`
 ### translateY/translateX 
 
 函数用于将元素沿x/y方向移动。参数接受<length>或<percentage>值，正数表示元素沿x/y轴正方向移动，负数表示元素沿x/y周负方向移动
+
+## 动画状态
+
+```css
+
+.panoramic {
+	width: 150px;
+	height: 150px;
+	background: url("http://www.w3cplus.com/sites/default/files/blogs/2015/1507/naxos-greece-big.jpg");
+	background-size: auto 100%;
+	animation: panoramic 10s linear infinite alternate;
+	animation-play-state: paused;
+}
+.panoramic:hover, .panoramic:focus {
+	animation-play-state: running;
+}
+@keyframes panoramic {
+	to {
+		background-position: 100% 0;
+	}
+}
+
+```
+
+要研究的属性：
+
+### background-size
+
+### animation-play-state
+
+### background-position
+
