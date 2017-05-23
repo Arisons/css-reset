@@ -156,5 +156,18 @@ transform属性想元素应用2D或3D转换。该属性允许我们对元素进�
 		<td>为 3D 转换元素定义透视视图</td>
 	</tr>
 </table>
-*	rotate
-*	translateY
+
+### rotate
+
+css角度单位：`deg`,`grad`,`rad`,`turn`
+
+* deg（度）。一个圆360度
+* grad（梯度）。一个圆共400梯度
+* rad（弧度）。一个圆共2π弧度
+* 转，圈。一个圆共一圈
+
+90deg = 100grad = 0.25turn ≈ 1.570796326794897rad
+
+### translateY/translateX 
+
+函数用于将元素沿x/y方向移动。参数接受<length>或<percentage>值，正数表示元素沿x/y轴正方向移动，负数表示元素沿x/y周负方向移动
